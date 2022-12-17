@@ -14,6 +14,7 @@ Table.jsx used for table representation.
 ![First Page](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(172).png "First page")
 
 - Upload to Database
+
 ####now upload file
 
 ![Upload](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(173).png "upload page")
@@ -34,3 +35,27 @@ Table.jsx used for table representation.
 ####click on show table to show data from database to table
 
 ![Table](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(175).png "Table")
+
+#### validation 
+
+![Clicked without adding file](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(183).png "Clicked without adding file")
+
+- Tables Feature
+
+#### sorting filtering with name
+![Filter](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(177).png "Filter")
+
+![sort with total](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(179).png "Sort with total")
+
+![Name sort](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(178).png "Name Sort")
+
+- Filter with month
+
+![Filtered Data of January](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(180).png "Filtered Data of January")
+
+![Filtered Data of April](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(181).png "Filtered Data of April")
+
+- Search option
+
+![Search](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(182).png "Search with mail with .edu format with expanding column email")
+
