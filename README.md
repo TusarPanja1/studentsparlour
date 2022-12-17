@@ -8,7 +8,7 @@ I have use Mysql Express React.js Node.js axios to develop this project
 I have use vite to create react app as it provide a faster spin-up of the development server. with command 
 ```npx create vite@latest```
 Five components of react is created with names Header, Footer, Table, main, Hero.
-In Header.jsx and Footer.jsx all header code are provided Hero section consists of two buttons to upload csv and show it from the database.
+In [Header.jsx](https://github.com/TusarPanja1/studentsparlour/blob/main/client/src/Header.jsx) and Footer.jsx all header code are provided Hero section consists of two buttons to upload csv and show it from the database.
 Table.jsx used for table representation.
 
 ![First Page](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(172).png "First page")
