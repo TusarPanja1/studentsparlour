@@ -1,6 +1,8 @@
 # studentsparlour
 Student Parlour is a web application that uses react.js, node.js, and MySQL for database connectivity. The website meets specific requirements for uploading a CSV file and storing it in a database. Obtaining data from the database and storing it in a table with search and filter functionality. As an assignment for a full-stack developer internship with Smart Winnr, this website was developed.
 
+I have use Mysql Express React.js Node.js axios to develop this project
+
 ## Problem Solving steps
   - Create a React App
 I have use vite to create react app as it provide a faster spin-up of the development server. with command 
@@ -11,11 +13,24 @@ Table.jsx used for table representation.
 
 ![First Page](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(172).png "First page")
 
+- Upload to Database
 ####now upload file
 
-![Upload](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(174).png "upload page")
+![Upload](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(173).png "upload page")
 
-####validate csv file
+####validate csv file and set input field to null
 
 ![Upload Validation](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(184).png "upload validation")
 
+####click on submit upload to database check if table is already presented if not then create table and upload with calculating attendence.
+
+![Upload success](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(174).png "upload success")
+
+####database look after upload 
+
+![Database look](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(185).png "database look")
+
+- Fetch form Database to table
+####click on show table to show data from database to table
+
+![Table](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(175).png "Table")
