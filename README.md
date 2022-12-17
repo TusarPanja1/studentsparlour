@@ -10,3 +10,12 @@ In Header.jsx and Footer.jsx all header code are provided Hero section consists 
 Table.jsx used for table representation.
 
 ![First Page](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(172).png "First page")
+
+####now upload file
+
+![Upload](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(174).png "upload page")
+
+####validate csv file
+
+![Upload Validation](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(184).png "upload validation")
+
