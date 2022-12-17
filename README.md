@@ -3,7 +3,7 @@ Student Parlour is a web application that uses react.js, node.js, and MySQL for 
 
 I have use Mysql Express React.js Node.js axios to develop this project
 
-## Problem Solving steps
+## Map of Assignment with Screenshots
   - Create a React App
 I have use vite to create react app as it provide a faster spin-up of the development server. with command 
 ```npx create vite@latest```
@@ -58,4 +58,12 @@ Table.jsx used for table representation.
 - Search option
 
 ![Search](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(182).png "Search with mail with .edu format with expanding column email")
+
+## Steps to run
+  - Download or git clone https://github.com/TusarPanja1/studentsparlour.git
+  - open client folder ```npm install```
+  - open server folder ```npm install```
+  - run client   ```npm run dev```
+  - run server ```npm start```
+
 
