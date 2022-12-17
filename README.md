@@ -62,7 +62,7 @@ Table.jsx used for table representation.
 ## Steps to run
   - Download or git clone https://github.com/TusarPanja1/studentsparlour.git
   - open client folder ```npm install```
-  - create mysql database with name 'studentsparlour'
+  - create mysql database with name 'studentparlour'
   - open server folder ```npm install```
   - run client   ```npm run dev```
   - run server ```npm start```
