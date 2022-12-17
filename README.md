@@ -83,4 +83,6 @@ Table.jsx used for table representation.
     - Check if file type is csv on error show error
     - check if file uploaded, on error show error
     - check data format,on error show error do nothing
-    - 
+    - onclick show data without select file show error
+    - on file uploaded successfully show success pop up
+    - on file tabled successfully show success pop up
