@@ -77,4 +77,10 @@ Table.jsx used for table representation.
   - on click show data fetch data from table separate data and headers
   - send data with headers to table component
   - create columns type add function to add headers to table
-  - 
+  - add search features to table
+  - Filter data with monthly filter
+  - Validations
+    - Check if file type is csv on error show error
+    - check if file uploaded, on error show error
+    - check data format,on error show error do nothing
+    - 
