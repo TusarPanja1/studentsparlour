@@ -68,5 +68,13 @@ Table.jsx used for table representation.
   - run server ```npm start```
 
 ## Approach 
-  - Upload data with from and send it to backend with axios
-  - create connection 
+  - Upload file ,filename with form and send it to backend with axios
+  - create connection
+  - fetch file and get headers and data with csvtojson
+  - drop table if already exist with filename and create new one with all headers
+  - calculate sum of rows and add total to table
+  - upload csv to mysql database with created table
+  - on click show data fetch data from table separate data and headers
+  - send data with headers to table component
+  - create columns type add function to add headers to table
+  - 
