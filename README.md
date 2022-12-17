@@ -5,3 +5,5 @@ Student Parlour is a web application that uses react.js, node.js, and MySQL for 
   - Create a React App
 I have use vite to create react app as it provide a faster spin-up of the development server. with command 
 ```npx create vite@latest```
+Five components of react is created with names Header, Footer, Table, main, Hero.
+In Header.jsx and Footer.jsx all header code are provided 
