@@ -62,10 +62,12 @@ In [Header.jsx](https://github.com/TusarPanja1/studentsparlour/blob/main/client/
 ## Steps to run
   - Download or git clone https://github.com/TusarPanja1/studentsparlour.git
   - open client folder ```npm install```
-  - create mysql database with name 'studentparlour'
+  - create mysql database with name 'studentparlour' and without any username and password
   - open server folder ```npm install```
   - run client   ```npm run dev```
   - run server ```npm start```
+  - if it shows error to install packages then please install following packages at client side ``` npm i react-toastify axios ag-grid-react ``` and at server side ``` npm i nodemon mysql multer express csvtojson cors body-parser```
+  - 
 
 ## Approach 
   - Upload file ,filename with form and send it to backend with axios
