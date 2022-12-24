@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import axios from 'axios'
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
@@ -36,22 +36,28 @@ const Table = (props) => {
     gridApi.setQuickFilter(event.target.value);
   };
   //filter on month
-  const handleChange = event => {
-    for(let i=0;i<columns.length;i++)
-    {
-      gridColumnApi.setColumnVisible(`${columns[i]}`,true)
-    }
-    let value=event.target.value
-
-    for(let i=3;i<columns.length;i++)
-    {
-      
-      if(!(columns[i].startsWith(value,3)))
-      {
-        gridColumnApi.setColumnVisible(`${columns[i]}`,false)
-      }
-       
-    }
+  const handleChange = async (event) => {
+    let value=event.target.value;
+    console.log(value)
+    let res = await axios.get(`http://localhost:3000/filter/${value}`);
+    console.log(res.data.data.response)
+    console.log(res.data.data.headers)
+    let columndata=res.data.data.headers;
+    let rowdata=res.data.data.response;
+    let cols=[]
+    
+    
+    {for(let i=0;i<3;i++){
+      cols.push({headerName: columndata[i], field: columndata[i],width: 150,resizable: true, sortable: true, filter: true})
+    }}
+    {for(let i=3;i<columndata.length-1;i++){
+      cols.push({headerName: columndata[i], field: columndata[i],width: 150,tooltipField: columndata[1]})
+    }}
+    cols.push({headerName: columndata[columndata.length-1], sortable: true,width: 150,field: columndata[columndata.length-1]})
+    gridApi.setColumnDefs(cols);
+    gridApi.setRowData(rowdata);
+    cols=[]
+    rowdata=[]
   };
 
   return (
@@ -67,7 +73,8 @@ const Table = (props) => {
       <div className='container' >
         <select onChange={handleChange}>
           <option value="" disabled selected>Select month</option>
-          <option value="">Show all</option>
+         
+          <option value="All">Show All</option>
           <option value="01">January</option>
           <option value="02">Febrauary</option>
           <option value="03">March</option>

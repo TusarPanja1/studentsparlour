@@ -52,14 +52,14 @@ app.post('/upload', upload.single("file"),  (req, res) => {
             csv().fromFile(csvFilePath).then((jsonObj) => {
                 Headers=Object.keys(jsonObj[0]);
                 Data= Object.values(jsonObj);
-                console.log(Headers);
-                console.log(Data);
+                
+                
                 dbname=req.file.filename;
                 dbname=dbname.replace('.csv','');
               //drop if existing or upload
                 var check=`DROP TABLE IF EXISTS \`${dbname}\`;`;
                 connection.query(check, (error, response) => {
-                      console.log(error || response);})
+                      console.log(error );})
 
                 //create table to upload
                 var query=` CREATE TABLE IF NOT EXISTS \`${dbname}\` (`;
@@ -73,7 +73,7 @@ app.post('/upload', upload.single("file"),  (req, res) => {
                     
                 query = query + cols+' Total INT(10) DEFAULT 0) ';
                     connection.query(query  , (error, response) => {
-                      console.log(error || response);})
+                      console.log(error );})
                       Headers.push('Total')
 
                 //load csv to database
@@ -81,7 +81,7 @@ app.post('/upload', upload.single("file"),  (req, res) => {
                     let qry =
                     `LOAD DATA INFILE '${filepath}${req.file.filename}' INTO TABLE ${dbname} FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES;`;
                     connection.query(qry, (error, response) => {
-                      console.log(error || response); 
+                      console.log(error ); 
                     });
                     let total= `UPDATE ${dbname} SET Total=`
                     for ( let i = 3; i < Headers.length; i++){
@@ -89,7 +89,7 @@ app.post('/upload', upload.single("file"),  (req, res) => {
                       }
                       total=total.substring(0, total.length - 1);
                       connection.query(total, (error, response) => {
-                        console.log(error || response); 
+                        console.log(error ); 
                       });
                    
               });
@@ -124,11 +124,11 @@ app.post('/upload', upload.single("file"),  (req, res) => {
 // select table from database and retrieve all data
 app.post('/table', (req, res) => {
   let db=dbname;
-  console.log(db)
+  
  
     const query = `SELECT * FROM ${db}`;
     connection.query(query , (error, response) => {
-      console.log(error || response);
+      console.log(error );
       //response on fetched
       res.send({
         status: true,
@@ -143,25 +143,69 @@ app.post('/table', (req, res) => {
     });
 
 })
+
 //response on  filter data
 app.get('/filter/:id', (req, res) => {
-  var month = req.params.id;
-  let db=dbname;
-  console.log(db)
-  console.log(month)
-  console.log(Headers)
-  Headers.find(element => {
-    if (element.includes(`${month}`)) {
-      columns.push(element)
-    }
-  });
-  console.log(columns)
-    
+  let value=req.params.id;
+
+  if(value=="All")
+  {
+    const query = `SELECT * FROM ${dbname}`;
+    connection.query(query, (error, response) => {
+      console.log(error );
+      res.send({
+        status: true,
+        message: "Data Fetched!",
+        data: {
+          response:response,
+          headers:Headers,
+        },
+      });
+    });
+  }
+  
+  else{
+  let headers=[]
+  let months=""
+  let total=""
+  for(let i=0;i<3;i++)
+  {
+      headers.push(Headers[i])
+      months=months+"`"+Headers[i]+"`"+",";
+  }
+  for(let i=3;i<Headers.length;i++)
+  {
+    if((Headers[i].startsWith(value,3)))
+    {
+      headers.push(Headers[i])
+      months=months+"`"+Headers[i]+"`"+",";
+      total=total+"`"+Headers[i]+"`"+"+";
+    } 
+  }
+  months=months.substring(0, months.length - 1);
+  total=total.substring(0, total.length - 1);
+  const query = `SELECT ${months},${total} as Total FROM ${dbname}`;
+  headers.push('Total')
+  connection.query(query , (error, response) => {
+    console.log(error );
+    //response on fetched
     res.send({
       status: true,
-      message: `For month ${month}`,
+      message: "month!",
+      data: {
+        response:response,
+        headers:headers,
+      },
+      
+      
     });
+  });
+  
+  months=""
+  total=""
+}
 })
+
 
 
 
