@@ -57,7 +57,7 @@ In [Header.jsx](https://github.com/TusarPanja1/studentsparlour/blob/main/client/
 
 - Search option
 
-![Search](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(182).png "Search with mail with .edu format with expanding column email")
+![Search](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(189).png "Search with mail with .edu format with expanding column email")
 
 ## Steps to run
   - Download or git clone https://github.com/TusarPanja1/studentsparlour.git
