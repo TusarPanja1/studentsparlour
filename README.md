@@ -11,53 +11,53 @@ Five components of react is created with names Header, Footer, Table, main, Hero
 In [Header.jsx](https://github.com/TusarPanja1/studentsparlour/blob/main/client/src/Header.jsx) and [Footer.jsx](https://github.com/TusarPanja1/studentsparlour/blob/main/client/src/Footer.jsx) all header code are provided [Hero](https://github.com/TusarPanja1/studentsparlour/blob/main/client/src/Hero.jsx) section consists of two buttons to upload csv and show it from the database.
 [Table.jsx](https://github.com/TusarPanja1/studentsparlour/blob/main/client/src/Table.jsx) used for table representation.
 
-![First Page](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(172).png "First page")
+![First Page](https://github.com/TusarPanja1/studentsparlour/blob/main/screenshots/Screenshot%20(172).png "First page")
 
 - Upload to Database
 
 ####now upload file
 
-![Upload](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(173).png "upload page")
+![Upload](https://github.com/TusarPanja1/studentsparlour/blob/main/screenshots/Screenshot%20(173).png "upload page")
 
 ####validate csv file and set input field to null
 
-![Upload Validation](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(184).png "upload validation")
+![Upload Validation](https://github.com/TusarPanja1/studentsparlour/blob/main/screenshots/Screenshot%20(184).png "upload validation")
 
 ####click on submit upload to database check if table is already presented if not then create table and upload with calculating attendence.
 
-![Upload success](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(174).png "upload success")
+![Upload success](https://github.com/TusarPanja1/studentsparlour/blob/main/screenshots/Screenshot%20(174).png "upload success")
 
 ####database look after upload 
 
-![Database look](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(185).png "database look")
+![Database look](https://github.com/TusarPanja1/studentsparlour/blob/main/screenshots/Screenshot%20(185).png "database look")
 
 - Fetch form Database to table
 ####click on show table to show data from database to table
 
-![Table](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(175).png "Table")
+![Table](https://github.com/TusarPanja1/studentsparlour/blob/main/screenshots/Screenshot%20(175).png "Table")
 
 #### validation 
 
-![Clicked without adding file](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(183).png "Clicked without adding file")
+![Clicked without adding file](https://github.com/TusarPanja1/studentsparlour/blob/main/screenshots/Screenshot%20(183).png "Clicked without adding file")
 
 - Tables Feature
 
 #### sorting filtering with name
-![Filter](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(177).png "Filter")
+![Filter](https://github.com/TusarPanja1/studentsparlour/blob/main/screenshots/Screenshot%20(177).png "Filter")
 
 ![sort with total](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(179).png "Sort with total")
 
-![Name sort](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(178).png "Name Sort")
+![Name sort](https://github.com/TusarPanja1/studentsparlour/blob/main/screenshots/Screenshot%20(178).png "Name Sort")
 
 - Filter with month
 
-![Filtered Data of January](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(187).png "Filtered Data of January")
+![Filtered Data of January](https://github.com/TusarPanja1/studentsparlour/blob/main/screenshots/Screenshot%20(187).png "Filtered Data of January")
 
-![Filtered Data of April](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(188).png "Filtered Data of April")
+![Filtered Data of April](https://github.com/TusarPanja1/studentsparlour/blob/main/screenshots/Screenshot%20(188).png "Filtered Data of April")
 
 - Search option
 
-![Search](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(189).png "Search with mail with .edu format with expanding column email")
+![Search](https://github.com/TusarPanja1/studentsparlour/blob/main/screenshots/Screenshot%20(189).png "Search with mail with .edu format with expanding column email")
 
 ## Steps to run
   - Download or git clone https://github.com/TusarPanja1/studentsparlour.git
