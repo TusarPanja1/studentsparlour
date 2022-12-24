@@ -51,9 +51,9 @@ In [Header.jsx](https://github.com/TusarPanja1/studentsparlour/blob/main/client/
 
 - Filter with month
 
-![Filtered Data of January](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(180).png "Filtered Data of January")
+![Filtered Data of January](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(187).png "Filtered Data of January")
 
-![Filtered Data of April](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(181).png "Filtered Data of April")
+![Filtered Data of April](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(188).png "Filtered Data of April")
 
 - Search option
 
