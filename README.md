@@ -45,7 +45,7 @@ In [Header.jsx](https://github.com/TusarPanja1/studentsparlour/blob/main/client/
 #### sorting filtering with name
 ![Filter](https://github.com/TusarPanja1/studentsparlour/blob/main/screenshots/Screenshot%20(177).png "Filter")
 
-![sort with total](https://github.com/TusarPanja1/studentsparlour/blob/main/Screenshot%20(179).png "Sort with total")
+![sort with total](https://github.com/TusarPanja1/studentsparlour/blob/main/screenshots/Screenshot%20(179).png "Sort with total")
 
 ![Name sort](https://github.com/TusarPanja1/studentsparlour/blob/main/screenshots/Screenshot%20(178).png "Name Sort")
 
